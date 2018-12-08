@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300%7COpen+Sans" rel="stylesheet"> 
+  <title>My Blog</title>
+  
+  <style>
+    /* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+          display: block;
+      }
+      body {
+          line-height: 1;
+      }
+      ol, ul {
+          list-style: none;
+      }
+      blockquote, q {
+          quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+          content: '';
+          content: none;
+      }
+      table {
+          border-collapse: collapse;
+          border-spacing: 0;
+      }
+    
+    /* ==== HELPER COLORS FOR LAYOUT ==== */
+    /*
+    .main-header {
+        background-color: rgba(255, 248, 53, .3);
+    }
+
+    .primary-content {
+        background-color: rgba(140, 96, 255, .3);
+    }
+
+    .post {
+        background-color: rgba(255, 0, 0, .3);
+    }
+    */
+    
+    /* ==== BASE STYLES ==== */
+
+    body {
+      font-family: Merriweather, 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 32px;
+      color: #333;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+
+    h1 {
+        font-size: 28.8px;
+    }
+
+    h2 {
+        font-size: 25.6px;
+        color: #e5127d;
+    }
+
+    .main-header p {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #8c8e9b;
+    }
+    
+    a {
+	color: #e5127d;
+	text-decoration: none;
+    }
+
+    a:hover {
+        color: #b60e63;
+    }
+    
+    /* ==== LAYOUT STYLES ==== */
+    
+    h1,h2,h3,h4,h5,h6,hgroup,
+    ul,ol,dd,
+    p,figure,
+    pre,table,fieldset,hr,
+    img,
+    .main-header, .primary-content{
+        margin-bottom: 1rem;
+    }
+    
+    .picture {
+        width: 100%;
+    }
+    
+    *{
+	  box-sizing: border-box;
+    }
+    
+    /* Main Header Styles */
+    .main-header {
+      text-align: center;
+      padding: 1.25rem;
+      color: #fff;
+	  background-color: #42444e;
+    }
+    
+    /* Article Styles */
+    .post {
+        width: 95%;
+        margin: 0 auto 1rem;
+        padding: 0.3125rem;
+    }
+    
+    /* ==== COMPONENT STYLES ==== */
+
+    .button {
+        display: inline-block;
+        border: 1px solid #8c8e9b;
+        color: #8c8e9b;
+        border-radius: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: 5px;
+        width: 100px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .button:hover {
+        border: 1px solid #b60e63;
+    }
+
+    .load {
+        display: block;
+        text-align: center;
+        padding: 0.625rem;
+        font-size: 1.25rem;
+        color: #8c8e9b;
+    }
+    
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1>Welcome To My Blog</h1>
+		<p>A Simple Blog Theme</p>
+		<a href="#" class="button">Like</a>
+		<a href="#" class="button">Follow</a>
+  </header>
+  <main>
+    <article class="post">
+		<h2><a href="#">A Cool Article About Something Edgy</a></h2>
+		<img src="http://i.imgur.com/rGWSW9i.jpg" alt="child" class="picture">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet metus at velit sodales blandit eu nec nibh. Etiam ac facilisis dui. Quisque lorem sapien, facilisis non purus eu, hendrerit feugiat neque. Nam malesuada et lectus vel pellentesque.</p>
+		<a href="#">Read more</a>
+	</article>
+	<article class="post">
+		<h2><a href="#">A Strong Opinion On a Thing That Just Happened</a></h2>
+		<img src="http://i.imgur.com/JS1RcVU.jpg" alt="man" class="picture">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet metus at velit sodales blandit eu nec nibh. Etiam ac facilisis dui. Quisque lorem sapien, facilisis non purus eu, hendrerit feugiat neque. Nam malesuada et lectus vel pellentesque.</p>
+		<a href="#">Read more</a>
+	</article>
+	<article class="post">
+		<h2><a href="#">A Listicle For You and Your Boyfriend</a></h2>
+		<img src="http://i.imgur.com/q80S4Ro.jpg" alt="women" class="picture">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet metus at velit sodales blandit eu nec nibh. Etiam ac facilisis dui. Quisque lorem sapien, facilisis non purus eu, hendrerit feugiat neque. Nam malesuada et lectus vel pellentesque.</p>
+		<a href="#">Read more</a>
+	</article>
+	<a href="#">Load more stories...</a>
+  </main>
+</body>
+</html>
